@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #09b5e5;
+    background-color: #333;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #09b5e5;
+    background-color: #333;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    display: none;
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* /////////////////////////////////////////////////////////////
+
+	ベーススタイル
+
+///////////////////////////////////////////////////////////// */
+
+/* ----------------------------------------------------------
+	0. リセット & 追加要素の設定
+------------------------------------------------------------- */
+
+video,
+audio,
+canvas {
+    display: inline-block;
+    zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+/* ----------------------------------------------------------
+	1. ベース
+------------------------------------------------------------- */
+
+html {
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    line-height: 1.15;
+    word-wrap: break-word;
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}

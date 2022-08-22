@@ -1,0 +1,225 @@
+.nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background-color: #9be2f5;
+
+    >.container {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    &__brand {
+        font-size: 40px;
+        color: $c_primary;
+    }
+
+    &-toggler {
+        display: none;
+
+        width: 35px;
+        height: 35px;
+
+        margin-left: auto;
+
+        position: relative;
+
+        span {
+            position: absolute;
+            left: 50%;
+
+            width: 100%;
+            height: 2px;
+
+            display: block;
+            border-radius: 1px;
+
+            background-color: #fff;
+
+            transform: translate(-50%, -50%);
+
+            transition: all 150ms ease;
+
+            &:nth-child(1) {
+                top: 32%;
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+            }
+
+            &:nth-child(3) {
+                top: 68%;
+            }
+        }
+
+        &.is-active {
+            span {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translate(-50%, 50%) rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: translate(-50%, 50%) rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+
+    &--leftside {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    &__mask {
+        display: none;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            padding: 6px 14px;
+            border-radius: 4px;
+
+            transition: all 150ms ease;
+
+            &:hover {
+                color: #fff;
+                background-color: rgba($color: $c_primary, $alpha: 0.4);
+            }
+
+            &.is-active {
+                color: #fff;
+                background-color: $c_primary;
+            }
+        }
+    }
+}
+
+.page-search {
+    width: 160px;
+    min-width: 160px;
+
+    input {}
+}
+
+main,
+.main {
+    padding-top: 100px;
+}
+
+@include screen(1024px) {
+    .nav {
+        height: 60px;
+
+        &__brand {
+            font-size: 30px;
+        }
+
+        &-toggler {
+            display: block;
+        }
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: -1;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 60px);
+        display: block;
+
+        visibility: hidden;
+        opacity: 0;
+
+        transition: visibility 300ms ease, opacity 200ms linear 100ms;
+
+        &.is-active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &--leftside {
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+
+        &__mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: rgb(0 0 0 / 0.8);
+        }
+
+        &__menu {
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 20px;
+
+
+            background-color: #fff;
+            margin-left: auto;
+
+            li {}
+
+            .nav-link {
+                padding: 6px 14px;
+                border-radius: 4px;
+
+                transition: all 150ms ease;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgba($color: $c_primary, $alpha: 0.4);
+                }
+
+                &.is-active {
+                    color: #fff;
+                    background-color: $c_primary;
+                }
+            }
+        }
+    }
+
+    .page-search {
+        width: 100%;
+        min-width: 160px;
+        padding: 20px 40px 40px 40px;
+
+        background-color: #fff;
+
+        input {
+            width: 100%;
+            border: 1px solid $c_primary;
+        }
+    }
+}

@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <!-- #region: config css-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- #endregion: config css-->
+    <!-- #region: google font link-->
+
+    <!-- #endregion: google font link-->
+    <!-- #region: plugins css-->
+    <link rel="stylesheet" href="./assets/plugins/anijs/ani.css">
+    <!-- #endregion: plugins css-->
+    <!-- #region: style css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- #endregion: style css-->
+    <title>TheMealBD.com</title>
+
+</head>
+
+<body>
+    <!-- #region: header-->
+    <header>
+        <div class="nav">
+
+            <div class="container">
+                <h1 class="nav__brand">
+                    <a class="nav-link" href="">
+                        TheMealBD
+                    </a>
+                </h1>
+
+
+                <div class="navbar navbar--leftside">
+                    <div class="navbar__mask"></div>
+                    <ul class="navbar__menu">
+                        <li class="is-active">
+                            <a class="nav-link is-active" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">API</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">Forum</a>
+                        </li>
+                    </ul>
+
+                    <div class="page-search">
+                        <input type="text" placeholder="search">
+                    </div>
+                </div>
+
+                <button class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- #endregion: header -->
+
+    <!-- #region: main -->
+    <main class="main home">
+        <div class="container">
+            <div class="home__intro container container--mini">
+                <h3>
+                    Welcome to TheMealDB
+                </h3>
+                <p>
+                    Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
+                    We also offer a free <a class="nav-link" href="">JSON API</a> for anyone wanting to use it, with
+                    additional features for
+                    subscribers.
+                </p>
+            </div>
+
+            <hr class="hr">
+
+            <div class="search-for-meal container container--mini">
+
+                <div class="search-block">
+                    <input id="search-for-meal" type="text" placeholder="search meal">
+                </div>
+
+                <div class="total-meals">
+                    <p>
+                        <img src="" alt="">
+                        <span class="tag">Total Meals:</span>
+                        <span class="num">284</span>
+                    </p>
+                    <p>
+                        <img src="" alt="">
+                        <span class="tag">Total Ingredients:</span>
+                        <span class="num">284</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <!-- #region: Latest Meals -->
+            <div class="meals-lists latest-meals">
+
+                <h3 class="title">
+                    Latest Meals
+                </h3>
+
+                <div class="meals-lists-content">
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <!-- #endregion: Latest Meals -->
+            <hr class="hr">
+            <!-- #region: Popular Ingredients -->
+            <div class="meals-lists popular-ingredients">
+
+                <h3 class="title">
+                    Popular Ingredients
+                </h3>
+
+                <div class="meals-lists-content">
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <!-- #endregion: Popular Ingredients -->
+            <hr class="hr">
+            <!-- #region: Random Meals -->
+            <div class="meals-lists random-meals">
+
+                <h3 class="title">
+                    Random Meals
+                </h3>
+
+                <div class="meals-lists-content">
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <!-- #endregion: Random Meals -->
+            <hr class="hr">
+            <!-- #region: Random Ingredients -->
+            <div class="meals-lists random-ingredients">
+
+                <h3 class="title">
+                    Random Ingredients
+                </h3>
+
+                <div class="meals-lists-content">
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                    <a class="nav-link" href="">
+                        <figure>
+                            <img src="https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg" alt="">
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <!-- #endregion: Random Ingredients -->
+            <hr class="hr">
+            <!-- #region: Browse Country -->
+            <div class="browse-country">
+                <h3 class="title">
+                    Browse Country
+                </h3>
+                <div class="browse-country-container">
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                    <a class="nav-link" href="">
+                        <img src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- #endregion: Browse Country -->
+            <hr class="hr">
+            <!-- #region: Browse By Name -->
+            <div class="browse-by-name">
+                <h3 class="title">
+                    Browse By Name
+                </h3>
+                <div class="browse-by-name-container">
+                    <a class="nav-link" href="">
+                        A
+                    </a>
+                    <a class="nav-link" href="">
+                        B
+                    </a>
+                </div>
+            </div>
+            <!-- #endregion: Browse By Name -->
+        </div>
+    </main>
+    <!-- #endregion: main -->
+
+    <!-- #region: footer -->
+    <footer>
+        <div class="container">
+            <p class="align-center">
+                © 2022 TheMealDB Proudly built in the UK
+            </p>
+        </div>
+
+    </footer>
+    <!-- #endregion: footer -->
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+/** functions */
+/**
+* > lineheight
+*/
+@function lineheight($fontsize, $height) {
+    @return #{$height / $fontsize};
+}
+
+/**
+* > fontsize rem
+*/
+@function fontsizerem($fontsize) {
+    @return #{$fontsize / 10}rem;
+}
+
+/**
+* > fontsize vw
+*/
+@function fontsizevw($fontsize, $vw) {
+    @return #{100 * ($fontsize / $vw)}vw;
+}

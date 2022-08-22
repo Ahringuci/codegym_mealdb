@@ -1,0 +1,13 @@
+//**> @media */
+@mixin screen($screen) {
+    @media only screen and (max-width: $screen) {
+        @content;
+    }
+}
+
+
+@mixin pchover {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
