@@ -1,15 +1,4 @@
-/** z-index */
-/**transition */
 /** functions */
-/**
-* > lineheight
-*/
-/**
-* > fontsize rem
-*/
-/**
-* > fontsize vw
-*/
 html {
   overflow-y: overlay;
 }
@@ -20,7 +9,7 @@ html.is-loading {
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: transparent;
+  background-color: rgba(9, 181, 229, 0.45);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,7 +49,7 @@ figure img,
 }
 @media only screen and (min-width: 1025px) {
   .nav-link {
-    transition: opacity 0.3s linear;
+    transition: all 150ms ease;
   }
   .nav-link:hover {
     opacity: 0.75;
@@ -307,6 +296,7 @@ main,
 }
 footer,
 .footer {
+  margin-top: 60px;
   background-color: #9be2f5;
   width: 100%;
   padding-top: 40px;

@@ -14,7 +14,7 @@ html {
     width: 8px;
     height: 8px;
 
-    background-color: transparent;
+    background-color: rgba($color: $color, $alpha: 0.45);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -55,7 +55,7 @@ figure,
     text-decoration: none;
 
     @include pchover {
-        transition: $hover-opacity;
+        transition: all 150ms ease;
 
         &:hover {
             opacity: 0.75;

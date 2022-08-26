@@ -1,0 +1,47 @@
+.letter {
+
+    &-food-lists {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .nav-link {
+            width: calc(20% - 20px);
+
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+
+            figcaption {
+                text-align: center;
+                transition: all 150ms ease;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                figcaption {
+                    color: #09b5e5;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    @include screen(640px) {
+        &-food-lists {
+            padding-top: 0;
+
+            .nav-link {
+                width: calc(50% - 20px);
+            }
+        }
+
+    }
+}
