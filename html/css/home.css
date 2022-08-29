@@ -1,5 +1,21 @@
 /** functions */
-/** animate */
+@keyframes ani_fav {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .home__intro {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -12,7 +28,7 @@
   margin-top: 40px;
 }
 .home__intro p .nav-link {
-  color: #09b5e5;
+  color: #1a94ff;
 }
 @media only screen and (max-width: 640px) {
   .home__intro h3 {
@@ -33,7 +49,7 @@
   align-items: center;
 }
 .search-for-meal .search-block input {
-  border: 1px solid #09b5e5;
+  border: 1px solid #1a94ff;
 }
 .search-for-meal .total-meals {
   margin-top: 20px;
@@ -54,25 +70,73 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.meals-lists .nav-link {
+.meals-lists .item {
   width: calc(25% - 20px);
   margin: 10px;
 }
-.meals-lists .nav-link figure {
+.meals-lists .item figure {
   width: 100%;
   display: block;
   overflow: hidden;
+  position: relative;
+  background-color: #000;
 }
-.meals-lists .nav-link figure img {
-  transition: transform 150ms ease;
+.meals-lists .item figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
 }
-.meals-lists .nav-link p {
-  color: #09b5e5;
+.meals-lists .item figure img {
+  opacity: 0.4;
+}
+.meals-lists .item p {
+  color: #1a94ff;
   text-align: center;
-  margin-top: 5px;
+  font-size: 18px;
+  margin-top: 12px;
 }
-.meals-lists .nav-link:hover img {
-  transform: scale(1.05);
+.meals-lists .item__container {
+  position: relative;
+}
+.meals-lists .item__count {
+  font-size: 14px;
+  padding-right: 4px;
+}
+.meals-lists .item__like {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 4px;
+}
+.meals-lists .item__like.act {
+  animation: ani_fav 1000ms ease 0s 1 both;
+}
+.meals-lists .item__fav {
+  font-size: 40px;
+  color: #fff;
+}
+.meals-lists .item__fav.act {
+  animation: ani_fav 1000ms ease 0s 1 both;
+}
+.meals-lists .item__cover {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+  padding: 2px 10px 10px 2px;
+}
+.meals-lists .item__more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
 }
 @media only screen and (max-width: 640px) {
   .meals-lists .nav-link {

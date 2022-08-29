@@ -9,12 +9,12 @@ html.is-loading {
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: rgba(9, 181, 229, 0.45);
+  background-color: rgba(26, 148, 255, 0.45);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #09b5e5;
+  background-color: #1a94ff;
 }
 
 body {
@@ -57,12 +57,12 @@ figure img,
 }
 
 .hr {
-  border-top-color: #09b5e5;
+  border-top-color: #1a94ff;
 }
 
 .title {
   font-size: 20px;
-  color: #09b5e5;
+  color: #1a94ff;
 }
 
 .align-center {
@@ -97,6 +97,7 @@ input,
   border-radius: 4px;
   border: 0;
   outline: none;
+  font-family: inherit;
   color: #333;
   padding: 6px 14px;
   margin: 2px;
@@ -108,13 +109,14 @@ input::placeholder,
 }
 input:focus,
 .input:focus {
-  box-shadow: 0 0 4px 1px #09b5e5;
+  box-shadow: 0 0 4px 1px #1a94ff;
 }
 
 button,
 .button {
   border: 0;
   outline: 0;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 300;
   color: #333;
@@ -123,6 +125,23 @@ button,
   cursor: pointer;
 }
 
+@keyframes ani_fav {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .nav {
   position: fixed;
   z-index: 9999;
@@ -139,7 +158,7 @@ button,
 }
 .nav__brand {
   font-size: 40px;
-  color: #09b5e5;
+  color: #1a94ff;
 }
 .nav-toggler {
   display: none;
@@ -179,6 +198,92 @@ button,
   top: 50%;
   transform: translate(-50%, 50%) rotate(45deg);
 }
+.nav-user {
+  margin-left: 20px;
+  position: relative;
+}
+.nav-user .button {
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #1a94ff;
+  background-color: #1a94ff;
+  transition: all 150ms ease;
+}
+.nav-user .button:hover {
+  color: #1a94ff;
+  background-color: #fff;
+}
+
+.user {
+  position: relative;
+}
+.user::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.user-infor {
+  width: 100%;
+  max-width: 180px;
+  font-size: 14px;
+  text-align: left;
+}
+.user-infor span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+.user:hover .user__container {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+.user__container {
+  position: absolute;
+  width: 220px;
+  top: calc(100% + 15px);
+  right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px #1a94ff;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.05);
+  filter: blur(4px);
+  transition: visibility 300ms ease, opacity 200ms linear 100ms, transform 300ms ease 100ms, filter 300ms ease 100ms;
+}
+.user__container::after {
+  content: "";
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  transform: translateY(-100%);
+}
+.user__detail .nav-link {
+  width: 100%;
+  display: block;
+  padding: 6px 20px;
+}
+.user__detail .nav-link:hover {
+  color: #fff;
+  background-color: #222;
+}
+.user__detail .user-logout {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  background-color: #1a94ff;
+}
 
 .navbar {
   display: flex;
@@ -205,16 +310,16 @@ button,
 }
 .navbar__menu .nav-link:hover {
   color: #fff;
-  background-color: rgba(9, 181, 229, 0.4);
+  background-color: rgba(26, 148, 255, 0.4);
 }
 .navbar__menu .nav-link.is-active {
   color: #fff;
-  background-color: #09b5e5;
+  background-color: #1a94ff;
 }
 
 .page-search {
-  width: 160px;
-  min-width: 160px;
+  width: 300px;
+  min-width: 300px;
 }
 main,
 .main {
@@ -276,11 +381,11 @@ main,
   }
   .navbar__menu .nav-link:hover {
     color: #fff;
-    background-color: rgba(9, 181, 229, 0.4);
+    background-color: rgba(26, 148, 255, 0.4);
   }
   .navbar__menu .nav-link.is-active {
     color: #fff;
-    background-color: #09b5e5;
+    background-color: #1a94ff;
   }
 
   .page-search {
@@ -291,7 +396,7 @@ main,
   }
   .page-search input {
     width: 100%;
-    border: 1px solid #09b5e5;
+    border: 1px solid #1a94ff;
   }
 }
 footer,
